@@ -1,0 +1,71 @@
+# === GLOBAL ===
+*.log
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.pot
+*.mo
+*.so
+*.py[cod]
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.swp
+*.swo
+
+__pycache__/
+*/__pycache__/
+
+# === PYTHON / DJANGO ===
+.env
+.env/
+*.env
+db.sqlite3
+*.sqlite3
+venv/
+local_settings.py
+media/
+staticfiles/
+migrations/**/__pycache__/
+
+# Pipenv / Poetry
+Pipfile.lock
+poetry.lock
+
+# === FRONTEND / REACT / VITE ===
+node_modules/
+frontend/node_modules/
+build/
+frontend/build/
+dist/
+frontend/dist/
+frontend/.vite/
+dist-ssr/
+*.local
+
+# Frontend logs
+logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# === ENV FILES ===
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# === OS / IDE ===
+.vscode/
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+
+# === GIT ===
+.git/

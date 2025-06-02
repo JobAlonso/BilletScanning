@@ -5,15 +5,21 @@ Migration project for Billet Scanning
 ├── backend/        ← Django
 │   ├── __init__.py
 │   ├── asgi.py
-│   ├── db.sqlite3
-│   ├── manage.py
 │   ├── settings.py
 │   ├── url.py
 │   ├── wsgi.py
 ├── frontend/       ← React
 │   ├── node_modules/
-│   └── build/
+│   ├── public/
+│   ├── src/
+│   ├── eslint.config.js
+│   ├── index.html
+│   ├── package-lock.json
+│   ├── package.json
+│   └── vite.config.js
 ├── venv/           ← Virtual environment
 ├── .gitignore
+├── db.sqlite3
+├── manage.py
 ├── README.md
 └── requirements.txt
