@@ -39,9 +39,13 @@ const TX2StockingTableScan = () => {
   }, []);
 
   return (
-    <Box sx={{ bgcolor: '#088808', color: '#fff', p: 3 }}>
-      <Typography variant="h5" gutterBottom>
-        TX2 Stocking Table Scan
+    <Box sx={{ bgcolor: '#088808', color: '#fff', p: 1 }}>
+      <Typography variant="h5">
+        TX2 - Stocking Table Scan
+      </Typography>
+
+      <Typography variant="body1" gutterBottom sx={{ mb: 4 }}>
+        Stocking Table Mode
       </Typography>
 
       <Box component="form" action="/StockingTableScan" method="post" sx={{ mb: 3, width: '300px' }}>
@@ -85,7 +89,7 @@ const TX2StockingTableScan = () => {
         Scanned Billet Info
       </Typography>
 
-      <Paper sx={{ backgroundColor: '#088808', color: '#fff', maxWidth: 400 }}>
+      <Paper sx={{ backgroundColor: '#088808', color: '#fff', maxWidth: 300 }}>
         <Table size="small">
           <TableBody>
             {['Billet Id', 'Cast Lot', 'Disposition', 'Status'].map((label) => (
@@ -106,7 +110,7 @@ const TX2StockingTableScan = () => {
         Mill Order
       </Typography>
 
-      <Paper sx={{ backgroundColor: '#088808', color: '#fff', maxWidth: 400 }}>
+      <Paper sx={{ backgroundColor: '#088808', color: '#fff', maxWidth: 300 }}>
         <Table size="small">
           <TableBody>
             {['Number', 'Heat', 'Cast Lot', 'Scheduled', 'Remaining'].map((label) => (

@@ -42,6 +42,7 @@ const TX1HandheldScanner = () => {
         backgroundColor: '#080808',
         color: '#fff',
         minHeight: '100vh',
+        p: 1,
       }}
     >
       <Typography variant="h5">
@@ -101,7 +102,7 @@ const TX1HandheldScanner = () => {
         Scanned Billet Info
       </Typography>
 
-      <Paper sx={{ backgroundColor: '#121212', color: '#fff', maxWidth: 500 }}>
+      <Paper sx={{ backgroundColor: '#121212', color: '#fff', maxWidth: 300 }}>
         <Table size="small">
           <TableBody>
             {[
@@ -121,16 +122,16 @@ const TX1HandheldScanner = () => {
         </Table>
       </Paper>
 
-      <Box sx={{ mt: 4 }}>
+      <Box sx={{ mt: 4, maxWidth: 300 }}>
         <Button
           variant="contained"
           color="success"
-          sx={{ mr: 2 }}
+          sx={{ mr: 2, mb: 2 }}
           onClick={() => navigate('/TX1/StockingTableScan')}
         >
-          TX1 Stocking Table
+          TX1 Stocking Table Mode
         </Button>
-        {/* Add more buttons as needed 
+        {/* Add more buttons as needed */}
         <Button
           variant="contained"
           color="success"
@@ -138,9 +139,8 @@ const TX1HandheldScanner = () => {
             (window.location.href = '/TX2/StockingTableScan')
           }
         >
-          TX2 Stocking Table
+          TX2 Stocking Table Mode
         </Button>
-        */}
       </Box>
     </Box>
   );

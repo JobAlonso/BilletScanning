@@ -64,7 +64,7 @@ export default function Navbar(props) {
                             <ListItemIcon><RuleSharpIcon /></ListItemIcon>
                             <ListItemText primary="Scan Summary" />
                         </ListItemButton>
-                        <ListItemButton sx={{ pl: 4 }} component={Link} to="/TX1/StockingTableScan" selected={path === '/TX1/TX1StockingTableScan'}>
+                        <ListItemButton sx={{ pl: 4 }} component={Link} to="/TX1/StockingTableMap" selected={path === '/TX1/TX1StockingTableMap'}>
                             <ListItemIcon><ViewWeekSharpIcon /></ListItemIcon>
                             <ListItemText primary="Stocking Table Map" />
                         </ListItemButton>
@@ -91,7 +91,7 @@ export default function Navbar(props) {
                             <ListItemIcon><RuleSharpIcon /></ListItemIcon>
                             <ListItemText primary="Scan Summary" />
                         </ListItemButton>
-                        <ListItemButton sx={{ pl: 4 }} component={Link} to="/TX2/StockingTableScan" selected={path === '/TX2/TX2StockingTableScan'}>
+                        <ListItemButton sx={{ pl: 4 }} component={Link} to="/TX2/StockingTableMap" selected={path === '/TX2/TX2StockingTableMap'}>
                             <ListItemIcon><ViewWeekSharpIcon /></ListItemIcon>
                             <ListItemText primary="Stocking Table Map" />
                         </ListItemButton>

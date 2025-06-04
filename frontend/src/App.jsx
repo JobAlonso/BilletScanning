@@ -1,4 +1,3 @@
-import React from 'react'
 import Navbar from './components/Navbar.jsx'
 import { Routes, Route } from 'react-router-dom'
 import { Typography } from '@mui/material';
@@ -11,12 +10,14 @@ import TX1HandheldScanner from './pages/TX1/TX1HandheldScanner.jsx';
 import TX1ScanSummary from './pages/TX1/TX1ScanSummary.jsx';
 import TX1StockingTableScan from './pages/TX1/TX1StockingTableScan.jsx';
 import TX1MillOrders from './pages/TX1/TX1MillOrders.jsx';
+import TX1StockingTableMap from './pages/TX1/TX1StockingTableMap.jsx';
 
 // Importing TX2 components
 import TX2HandheldScanner from './pages/TX2/TX2HandheldScanner.jsx';;
 import TX2ScanSummary from './pages/TX2/TX2ScanSummary.jsx';
 import TX2StockingTableScan from './pages/TX2/TX2StockingTableScan.jsx';
 import TX2MillOrders from './pages/TX2/TX2MillOrders.jsx';
+import TX2StockingTableMap from './pages/TX2/TX2StockingTableMap.jsx';
 
 
 function Home() {
@@ -40,6 +41,8 @@ export default function App() {
         <Route path="/TX2/ScanSummary" element={<TX2ScanSummary />} />
         <Route path="/TX2/StockingTableScan" element={<TX2StockingTableScan />} />
         <Route path="/TX2/MillOrders" element={<TX2MillOrders />} />
+        <Route path="/TX1/StockingTableMap" element={<TX1StockingTableMap />} />
+        <Route path="/TX2/StockingTableMap" element={<TX2StockingTableMap />} />
         <Route path="/Info" element={<Info />} />
         <Route path="/UnderConstruction" element={<UnderConstruction />} />
       </Routes>
