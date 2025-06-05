@@ -26,6 +26,7 @@ import Collapse from '@mui/material/Collapse';
 import NavigateNextSharpIcon from '@mui/icons-material/NavigateNextSharp';
 import ExpandMore from '@mui/icons-material/ExpandMore';
 import AssignmentIcon from '@mui/icons-material/Assignment';
+//import Avatar from '@mui/material/Avatar';
 
 export default function Navbar(props) {
     const { drawerWidth, content } = props
@@ -135,6 +136,11 @@ export default function Navbar(props) {
                         <MenuIcon />
                     </IconButton>
 
+                    <Box component="img"
+                        src="/N_icon_white_transparent.png"
+                        alt="App Icon"
+                        sx={{ width: 24, height: 24, mr: 3, display: { xs: 'none', sm: 'block' } }}
+                    />
                     <Typography variant="h6" noWrap component="div">
                         Billet Scanning
                     </Typography>
