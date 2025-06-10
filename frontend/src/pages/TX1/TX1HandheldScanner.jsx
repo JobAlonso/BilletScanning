@@ -135,9 +135,7 @@ const TX1HandheldScanner = () => {
         <Button
           variant="contained"
           color="success"
-          onClick={() =>
-            (window.location.href = '/TX2/StockingTableScan')
-          }
+          onClick={() => navigate('/TX2/StockingTableScan')}
         >
           TX2 Stocking Table Mode
         </Button>
